@@ -18,7 +18,7 @@ function Logo() {
 
 function Nav() {
   return (
-    <nav>
+    <nav aria-label="main navigation bar">
       <ul>
         <li>
           <a href="#">Home</a>
