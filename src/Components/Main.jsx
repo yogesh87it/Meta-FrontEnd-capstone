@@ -1,4 +1,5 @@
 import heroPic from "../assets/restauranfood.jpg";
+
 import { restaurantInfo, weeklySpecials, customerReviews } from "../data";
 
 export default function Main() {
@@ -56,7 +57,7 @@ function SpecialCards({ weeklySpecials }) {
       </div>
       <div className="special-describe">
         <p>{weeklySpecials.dishDescription}</p>
-        <p>Order a delivery</p>
+        <p className="delivery">Order a delivery</p>
       </div>
     </div>
   );
@@ -64,9 +65,9 @@ function SpecialCards({ weeklySpecials }) {
 
 function CustomerReviews({ customerReviews }) {
   return (
-    <section class="cutomerReviews-main">
+    <section className="customerReviews-main">
       <h3>Testimonials</h3>
-      <div class="review-container">
+      <div className="review-container">
         <ReviewCards customerReviews={customerReviews[0]} />
         <ReviewCards customerReviews={customerReviews[1]} />
         <ReviewCards customerReviews={customerReviews[2]} />
@@ -89,16 +90,26 @@ function ReviewCards({ customerReviews }) {
   );
 }
 
-function Chicago() {
-  <section className="hero-info">
-    <div>
-      <h3>{restaurantInfo.name}</h3>
-      <p>{restaurantInfo.location}</p>
-      <p>{restaurantInfo.about}</p>
-    </div>
-    <div>
-      <img src="MarioAdrain1" alt="pics of owners" />
-      <img src="MarioAdrain2" alt="pics of owners" />
-    </div>
-  </section>;
+function Chicago({ restaurantInfo }) {
+  return (
+    <section className="owner-info">
+      <div className="owner-details">
+        <h3>{restaurantInfo.name}</h3>
+        <p>{restaurantInfo.location}</p>
+        <p>{restaurantInfo.ownerInfo}</p>
+      </div>
+      <div>
+        <img
+          className="owner-pic-1"
+          src={restaurantInfo.ownerPic1}
+          alt="pics of owners"
+        />
+        <img
+          className="owner-pic-2"
+          src={restaurantInfo.ownerPic2}
+          alt="pics of owners"
+        />
+      </div>
+    </section>
+  );
 }

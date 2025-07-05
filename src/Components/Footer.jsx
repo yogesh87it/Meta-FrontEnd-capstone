@@ -1,4 +1,8 @@
-import logo from "../assets/Logo.svg";
+import logo from "../assets/logo.svg";
+import meta from "../assets/meta.svg";
+import insta from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.png";
+
 export default function Footer() {
   return (
     <footer>
@@ -20,8 +24,11 @@ function Logo() {
 
 function FooterLinks() {
   return (
-    <nav aria-label="footer navigation">
+    <nav aria-label="footer-navigation">
       <ul>
+        <li className="footer-heading">
+          <span>Links</span>
+        </li>
         <li>
           <a href="#">Home</a>
         </li>
@@ -54,9 +61,12 @@ function Contact() {
   return (
     <address>
       <ul>
-        <li>Address</li>
-        <li>Phone Number</li>
-        <li>Email</li>
+        <li className="footer-heading">Address</li>
+        <li>24th, Bay Street, Chicago</li>
+        <li className="footer-heading">Phone No.</li>
+        <li>(012)-124-356-987</li>
+        <li className="footer-heading">Email</li>
+        <li>little-lemon@hotmail.com</li>
       </ul>
     </address>
   );
@@ -64,15 +74,16 @@ function Contact() {
 
 function SocialMediaLink() {
   return (
-    <ul>
+    <ul className="social-media">
+      <li className="footer-heading">Follow us on</li>
       <li>
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="insta-logo" alt="instagram logo" />
-          Instagram
+          <img src={insta} alt="instagram logo" />
+          {/*Instagram*/}
         </a>
       </li>
       <li>
@@ -81,8 +92,8 @@ function SocialMediaLink() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="meta-logo" alt="meta logo" />
-          Meta
+          <img src={meta} alt="meta logo" />
+          {/*Meta*/}
         </a>
       </li>
       <li>
@@ -91,8 +102,8 @@ function SocialMediaLink() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="linkden-logo" alt="linkden logo" />
-          Linkedin
+          <img src={linkedin} alt="linkden logo" />
+          {/*Linkedin*/}
         </a>
       </li>
     </ul>
