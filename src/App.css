@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap");
+
+p {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  font-family: "Markazi Text", serif;
+  color: #495e57;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4fr auto;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  background-color: #f4ce14;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+/*header*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 12vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: aquamarine;
+}
+
+header nav img {
+  height: 200px;
+  width: 200px;
+  margin-top: -88px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #495e57;
+}
+
+/*for Main*/
+/*For Hero*/
+.hero {
+  display: flex;
+  margin: auto;
+  text-align: left;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0 4rem 0 0;
+  padding: 0;
+}
+
+h1 + p {
+  font-size: 2rem;
+  margin: 0 2rem 0 0;
+  padding: 0;
+}
+
+.hero-info {
+  margin-right: 10rem;
+}
+
+.hero-info p:nth-of-type(2) {
+  font-size: 1.5rem;
+  width: 25rem;
+}
+
+.hero-pic > img {
+  height: 20rem;
+  width: 18rem;
+  border-radius: 5%;
+}
+/*For Special*/
+.main-special-container {
+  width: 70vw;
+  margin: 1rem auto;
+}
+.weeklySpecials {
+  display: flex;
+  width: 65vw;
+  margin: auto;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.special-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.specialCards {
+  background-color: #ee9972;
+  width: 16rem;
+  border-radius: 20px;
+}
+
+.specialPic {
+  width: 16rem;
+  border-radius: 20px 20px 0 0;
+}
+.specialPic > img {
+  width: 16rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.special-dish-name-rate {
+  display: flex;
+  justify-content: space-around;
+}
+
+.special-dish-name-rate > p {
+  font-size: large;
+  font-weight: 600;
+  margin: 0;
+}
+
+.special-rate {
+  color: red;
+}
+
+.special-describe {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.delivery {
+  font-weight: 600;
+}
+/*testimonials*/
+.customerReviews-main {
+  width: 65vw;
+  margin: auto;
+  text-align: left;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-around;
+  width: 16rem;
+  gap: 1rem;
+}
+
+.customer-card {
+  background-color: #fdbadd;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.customer-card > div > p {
+  font-weight: 700;
+}
+
+.customer-card > div > img {
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/*Chicago*/
+.owner-info {
+  background-color: rgb(89, 240, 240);
+  width: 65vw;
+  height: 30vw;
+  margin: 1rem auto;
+  display: flex;
+  position: relative;
+}
+
+.owner-details {
+  text-overflow: none;
+  width: 50%;
+  padding: 1rem;
+}
+
+.owner-details > h3 {
+  margin-bottom: 0;
+}
+.owner-details > p {
+  margin-top: 0;
+  font-size: medium;
+}
+.owner-pic-1 {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  height: 15rem;
+  border-radius: 15px;
+}
+
+.owner-pic-2 {
+  position: absolute;
+  top: 100px;
+  right: 170px;
+  height: 15rem;
+  border-radius: 15px;
+}
+
+/*Footer*/
+footer {
+  width: 70vw;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style-type: none;
+}
+.footer-navigation > li > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.social-media img {
+  height: 2rem;
+  width: 2rem;
+}
+.footer-heading {
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .special-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
