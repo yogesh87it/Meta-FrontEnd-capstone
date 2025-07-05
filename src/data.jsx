@@ -1,6 +1,11 @@
-import salad from "../assets/greek-salad.jpg";
-import dessert from "../assets/lemon-dessert.jpg";
-import bruchetta from "../assets/bruchetta.svg";
+import salad from "./assets/greek-salad.jpg";
+import dessert from "./assets/lemon-dessert.jpg";
+import bruchetta from "./assets/bruchetta.svg";
+import chineseFace from "./assets/chinese-face.jpeg";
+import face from "./assets/face.jpeg";
+import femaleFace from "./assets/female-face.jpeg";
+import face2 from "./assets/another-face.jpeg";
+
 const restaurantInfo = {
   name: "Little Lemon",
   location: "Chicago",
@@ -34,4 +39,36 @@ const weeklySpecials = [
       "A refreshing Lemon Dessert with a buttery graham crust, layered with smooth lemon curd and whipped cream, topped with candied lemon.",
   },
 ];
-export { restaurantInfo, weeklySpecials };
+
+const customerReviews = [
+  {
+    customerName: "Rita Giani",
+    customerFeedback:
+      "Delicious food, warm service, and a cozy atmosphere. A perfect spot for a relaxing meal. Highly recommended to everyone!",
+    customerRating: "⭐⭐⭐⭐⭐",
+    customerPic: femaleFace,
+  },
+  {
+    customerName: "Michael Wong",
+    customerFeedback:
+      "Fantastic experience! Tasty dishes, friendly staff, and a welcoming vibe. Everything was perfect.",
+    customerRating: "⭐⭐⭐⭐⭐",
+    customerPic: chineseFace,
+  },
+  {
+    customerName: "John Asharaf",
+    customerFeedback:
+      "Loved the food and quick service! Cozy setting with a great menu. A wonderful spot to enjoy meals with friends or family.",
+    customerRating: "⭐⭐⭐⭐⭐",
+    customerPic: face,
+  },
+  {
+    customerName: "Jenny Grey",
+    customerFeedback:
+      "Beautifully presented, rich in flavor, perfectly balanced spices. Tender texture, aromatic finish — a delightful experience from first bite to last.",
+    customerRating: "⭐⭐⭐⭐⭐",
+    customerPic: face2,
+  },
+];
+
+export { restaurantInfo, weeklySpecials, customerReviews };
