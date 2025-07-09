@@ -6,9 +6,10 @@ p {
 
 body {
   font-family: "Markazi Text", serif;
-  color: #495e57;
+  color: #333333; /* #495e57;*/
   margin: 0;
   box-sizing: border-box;
+  background-color: #ee9972;
 }
 
 .main-container {
@@ -27,6 +28,19 @@ button {
   padding: 2px;
 }
 
+button:hover {
+  width: 8.5rem;
+  height: 2.5rem;
+  pointer-events: stroke;
+}
+
+button:active {
+  color: white;
+}
+
+li:hover {
+  font-size: large;
+}
 /*header*/
 header {
   width: 100%;
@@ -35,7 +49,7 @@ header {
   height: 12vh;
   margin-bottom: 0;
   padding-bottom: 0;
-  background-color: aquamarine;
+  background-color: #edeffe;
 }
 
 header nav img {
@@ -57,6 +71,9 @@ header nav ul {
   list-style-type: none;
 }
 
+header nav ul li:hover {
+  font-size: 1.45rem;
+}
 a {
   text-decoration: none;
   color: #495e57;
@@ -100,8 +117,11 @@ h1 + p {
 }
 /*For Special*/
 .main-special-container {
-  width: 70vw;
+  width: 68vw;
   margin: 1rem auto;
+  background-color: #495e57;
+  padding: 1rem;
+  margin-bottom: 0;
 }
 .weeklySpecials {
   display: flex;
@@ -117,7 +137,7 @@ h1 + p {
 }
 
 .specialCards {
-  background-color: #ee9972;
+  background-color: #edeffe;
   width: 16rem;
   border-radius: 20px;
 }
@@ -156,9 +176,12 @@ h1 + p {
 }
 /*testimonials*/
 .customerReviews-main {
-  width: 65vw;
+  width: 68vw;
   margin: auto;
   text-align: left;
+  padding: 1rem;
+  background-color: #fbdabb;
+  margin-top: 0;
 }
 
 .review-container {
@@ -169,7 +192,7 @@ h1 + p {
 }
 
 .customer-card {
-  background-color: #fdbadd;
+  background-color: #ee9972;
   text-align: center;
   border-radius: 8px;
   padding: 5px;
@@ -189,12 +212,14 @@ h3 {
 
 /*Chicago*/
 .owner-info {
-  background-color: rgb(89, 240, 240);
-  width: 65vw;
+  background-color: #495e57;
+  width: 70vw;
   height: 30vw;
   margin: 1rem auto;
   display: flex;
   position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .owner-details {
@@ -228,8 +253,19 @@ h3 {
 
 /*Footer*/
 footer {
-  width: 70vw;
+  width: 100vw;
+  height: 25vh;
   margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #edeffe;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer > div {
+  width: 70vw;
   display: flex;
   justify-content: space-around;
 }
@@ -259,4 +295,52 @@ footer ul {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/*Form*/
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  max-height: 330px;
+  background-color: #edeffe;
+  margin: 1rem auto;
+  min-width: 340px;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+label {
+  font-size: larger;
+  margin-left: 1rem;
+}
+
+input {
+  height: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  border-radius: 5px;
+}
+
+form > button {
+  margin: 1rem auto;
+}
+
+select {
+  height: 2rem;
+}
+
+/*Booking*/
+.confirmation-msg {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 50vh;
+  background-color: #333333;
+  color: #f4ce14;
+  border-radius: 10px;
+  margin: 1rem auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

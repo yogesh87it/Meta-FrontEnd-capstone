@@ -2,14 +2,17 @@ import logo from "../assets/logo.svg";
 import meta from "../assets/meta.svg";
 import insta from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer>
-      <Logo />
-      <FooterLinks />
-      <Contact />
-      <SocialMediaLink />
+      <div>
+        <Logo />
+        <FooterLinks />
+        <Contact />
+        <SocialMediaLink />
+      </div>
     </footer>
   );
 }
@@ -30,7 +33,7 @@ function FooterLinks() {
           <span>Links</span>
         </li>
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link> {/*<a href="#">Home</a>*/}
         </li>
 
         <li>
@@ -42,7 +45,8 @@ function FooterLinks() {
         </li>
 
         <li>
-          <a href="#">Reservations</a>
+          <Link to="/booking">Reservations</Link>
+          {/*<a href="#">Reservations</a>*/}
         </li>
 
         <li>

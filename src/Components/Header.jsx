@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header>
@@ -26,7 +27,8 @@ function Nav() {
           <img src={logo} alt="little icon logo" />
         </li>
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
+          {/*<a href="#">Home</a>*/}
         </li>
 
         <li>
@@ -38,7 +40,8 @@ function Nav() {
         </li>
 
         <li>
-          <a href="#">Reservations</a>
+          <Link to="/booking">Reservations</Link>
+          {/*<a href="#">Reservations</a>*/}
         </li>
 
         <li>
